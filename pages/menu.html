@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Menú semanal iCook</title>
+        <meta name="description" content="¿No sabés qué cocinar esta semana? En iCook te tenemos cubierto: avocado toast, ensaladas, paella, pasta y mucho más.">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@450&display=swap" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+        <link rel="stylesheet" href="../css/estilos.css">
+    </head>
+    
+    <body>
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="../index.html"><img class="fotoLogo" src="../images/logo.png" alt="Logo iCook"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item"><a class="nav-link" href="sobre-nosotros.html">Sobre nosotros</a></li>
+                            <li class="nav-item"><a class="nav-link" href="planes.html">Planes</a></li>
+                            <li class="nav-item"><a class="nav-link active" aria-current="page" href="menu.html">Menú</a></li>
+                            <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <section>
+                <div class="contenedorTitulo">
+                    <h2>Menú para la semana del 23/08</h2>
+                    <p class="contenedorTexto text-center mt-4">Una vez que te crees un usuario e inicies sesión desde nuestra app vas a poder acceder al menú completo, pero mientras tanto acá podés ver un adelanto.</p>
+                </div>
+
+                <!-- Dispositivos pequeños -->
+                <h3 class="text-center tituloCarrusel">Carnes y vegetales</h3>
+                <div id="carousel-1" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="../images/menu-carnesyvegetales-paella.jpg" class="d-block w-100" alt="Paella">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../images/menu-carnesyvegetales-carne.jpg" class="d-block w-100" alt="Carne">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../images/menu-carnesyvegetales-pizza.jpg" class="d-block w-100" alt="Pizza">
+                        </div>
+                    </div>
+
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carousel-1" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+
+                    <button class="carousel-control-next" type="button" data-bs-target="#carousel-1" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+
+                <h3 class="text-center tituloCarrusel">Vegetariano</h3>
+                <div id="carousel-2" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="../images/menu-vegetariano-ensalada.jpg" class="d-block w-100" alt="Ensalada">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../images/menu-vegetariano-pasta.jpg" class="d-block w-100" alt="Pasta">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../images/menu-vegetariano-sopa.jpg" class="d-block w-100" alt="Sopa">
+                        </div>
+                    </div>
+
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carousel-2" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+
+                    <button class="carousel-control-next" type="button" data-bs-target="#carousel-2" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+
+                <h3 class="text-center tituloCarrusel">Bajo en calorías</h3>
+                <div id="carousel-3" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="../images/menu-bajoencalorias-avocadotoast.jpg" class="d-block w-100" alt="Avocado toast">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../images/menu-bajoencalorias-hamburguesa.jpg" class="d-block w-100" alt="Hamburguesa">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../images/menu-bajoencalorias-ensalada.jpg" class="d-block w-100" alt="Ensalada">
+                        </div>
+                    </div>
+
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carousel-3" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+
+                    <button class="carousel-control-next" type="button" data-bs-target="#carousel-3" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+
+
+                <!-- Dispositivos grandes -->
+                <div class="fotosPlatos">    
+                    <h3 class="text-center my-5">Carnes y vegetales</h3>
+                    <div>
+                        <div class="row">
+                            <div class="col">
+                                <img class="img-fluid bordeRedondeado efecto" src="../images/menu-carnesyvegetales-paella.jpg" alt="Paella">
+                            </div>
+                            <div class="col">
+                                <img class="img-fluid bordeRedondeado efecto" src="../images/menu-carnesyvegetales-carne.jpg" alt="Carne">
+                            </div>
+                            <div class="col">
+                                <img class="img-fluid bordeRedondeado efecto" src="../images/menu-carnesyvegetales-pizza.jpg" alt="Pizza">
+                            </div>
+                        </div>
+                    </div>
+
+                    <h3 class="text-center my-5">Vegetariano</h3>
+                    <div>
+                        <div class="row">
+                            <div class="col">
+                                <img class="img-fluid bordeRedondeado efecto" src="../images/menu-vegetariano-ensalada.jpg" alt="Ensalada">
+                            </div>
+                            <div class="col">
+                                <img class="img-fluid bordeRedondeado efecto" src="../images/menu-vegetariano-pasta.jpg" alt="Pasta">
+                            </div>
+                            <div class="col">
+                                <img class="img-fluid bordeRedondeado efecto" src="../images/menu-vegetariano-sopa.jpg" alt="Sopa">
+                            </div>
+                        </div>
+                    </div>
+
+                    <h3 class="text-center my-5">Bajo en calorías</h3>
+                    <div>
+                        <div class="row">
+                            <div class="col">
+                                <img class="img-fluid bordeRedondeado efecto" src="../images/menu-bajoencalorias-avocadotoast.jpg" alt="Avocado toast">
+                            </div>
+                            <div class="col">
+                                <img class="img-fluid bordeRedondeado efecto" src="../images/menu-bajoencalorias-hamburguesa.jpg" alt="Hamburguesa">
+                            </div>
+                            <div class="col">
+                                <img class="img-fluid bordeRedondeado efecto" src="../images/menu-bajoencalorias-ensalada.jpg" alt="Ensalada">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="grillaFooter">
+                <nav> 
+                    <ul class="navFooter">
+                        <li><a href="../index.html">Inicio</a></li>
+                        <li><a href="sobre-nosotros.html">Sobre nosotros</a></li>
+                        <li><a href="planes.html">Planes</a></li>
+                        <li><a href="menu.html">Menú</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </nav>
+                
+                <div class="footerAppsContenedor">
+                    <p class="footer">Descargá nuestra app</p>
+                    <p class="footer">Disponible para iOS & Android</p>
+                </div> 
+
+                <div class="footerFotosContenedor">
+                    <a href="https://apps.apple.com/" target="_blank" ><img class="fotoFooter" src="../images/appstore.png" alt="App Store"></a>
+                    <a href="https://play.google.com/" target="_blank"><img class="fotoFooter" src="../images/googleplay.png" alt="Google Play"></a>
+                </div>
+            </div>
+
+            <p class="footer bordeSuperior">© iCook 2021</p>
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+
+    </body>
+</html>

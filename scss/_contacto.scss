@@ -1,0 +1,42 @@
+/* ---------------------------------------------- CONTACTO */
+
+.formulario {
+    margin: 2em auto;
+}
+
+.form-control:focus, .form-select:focus {
+    border: 0.2rem solid $violeta;
+    box-shadow: none;
+}
+
+.form-check-input:checked {
+    background-color: $violeta;
+    border-color: $violeta;
+}
+
+.contenedorBotones {
+    @include contenedores(row, center, center);
+}
+
+
+/* MEDIA QUERIES */ 
+
+@media only screen and (max-width: 600px) {
+
+}
+
+@media only screen and (min-width: 600px) {
+
+    .formulario {
+        width: 70%;
+    }
+
+}
+
+@media only screen and (min-width: 992px) {
+    
+    .formulario {
+        width: 50%;
+    }
+    
+}

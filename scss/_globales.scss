@@ -1,0 +1,213 @@
+/* ---------------------------------------------- ESTILOS GLOBALES */
+
+/* TIPOFRAFÍA */
+
+h1 {
+    color: $blanco;
+    text-shadow: 0.05em 0.05em 0.05em $gris;
+}
+
+h2 {
+    color: $violeta;
+    text-align: center;
+}
+
+h3, p {
+    color: $gris;
+}
+
+.footer {
+    font-size: 0.85rem;
+}
+
+.display-4 {
+    font-weight: 500;
+}
+
+/* LAYOUT */ 
+
+section, footer {
+    padding: 3em 1em;
+}
+
+.fondoVerde {
+    background-color: $verde;
+}
+
+.fondoBlanco {
+    background-color: $blanco;
+}
+
+@mixin contenedores($direction, $justify, $align) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+    height: 100%;
+}
+
+.padreFlex {
+    @include contenedores(column, center, stretch);
+}
+
+.contenedorTitulo {
+    @include contenedores(column, center, center);
+}
+
+/* NAV */
+
+.navbar-light {
+    background-color: $blanco;
+    box-shadow: $sombraGrisCaja;
+}
+
+/* FOOTER */ 
+
+.navFooter {
+    overflow: hidden;
+    list-style-type: none;
+    padding: 0;
+
+    a {
+        font-size: 0.85rem;
+        text-decoration: none;
+        color: $gris;
+    }
+
+    a:hover {
+        font-weight: bold;
+    }
+} 
+
+.grillaFooter {
+    display: grid;
+    grid-template-columns: 2fr 0.5fr 2fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:    "links vacio info"
+                            "links vacio apps";
+}
+
+.footerAppsContenedor {
+    grid-area: info;
+    justify-self: start;
+}
+
+.footerFotosContenedor {
+    grid-area: apps;
+    justify-self: end;
+}
+
+.grillaFooter {
+    nav {
+        grid-area: links;
+    }
+}
+
+/* SOMBRAS Y BORDES */
+
+.sombraGris {
+    box-shadow: $sombraGrisCaja;
+}
+
+.sombraVerde {
+    box-shadow: $sombraVerdeCaja;
+}
+
+.bordeRedondeado {
+    border-radius: 2rem;
+}
+
+.bordeSuperior {
+    padding-top: 1em;
+    margin: 2em 0 0.5em 0;
+    border-top: 0.1rem solid $gris;
+}
+
+/* IMÁGENES */
+
+.fotoLogo, .fotoFooter {
+    height: 2rem;
+}
+
+.fotoFondo {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6)), url("../images/fondo.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* BOTONES */
+
+.btn-primary {
+    background-color: $violeta;
+    border-color: $violeta;
+}
+
+.btn-primary:hover {
+    background-color: $violetaOscuro;
+    border-color: $violetaOscuro;
+}
+
+/* MEDIA QUERIES */ 
+
+@media only screen and (max-width: 600px) {
+    
+}
+
+
+@media only screen and (min-width: 600px) {
+    
+    /* LAYOUT */ 
+
+    section, footer {
+        padding: 3em 2em;
+    }
+    
+    .padreFlex {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .subcontenedor {
+        width: 48%;
+    }
+
+    .contenedorTexto {
+        width: 75%;
+    }
+
+    /* FOOTER */ 
+
+    .grillaFooter {
+        grid-template-columns: 2fr 0.5fr 1fr 1fr;
+        grid-template-areas:    "links vacio info apps"
+                                "links vacio info apps";
+        column-gap: 2%;
+    }
+
+}
+
+
+@media only screen and (min-width: 992px) {
+
+    /* LAYOUT */ 
+
+    section, footer {
+        padding: 3em 3em;
+    }
+
+    .contenedorTexto {
+        width: 50%;
+    }
+    
+    /* FOOTER */ 
+    
+    .navFooter {
+        display: flex;
+        justify-content: space-between;
+    }
+
+}

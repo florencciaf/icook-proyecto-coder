@@ -1,0 +1,33 @@
+/* ---------------------------------------------- INDEX */
+
+
+
+/* MEDIA QUERIES */ 
+
+@media only screen and (max-width: 600px) {
+
+}
+
+@media only screen and (min-width: 600px) {
+
+    /* Sección 4: ¿ya aprovechaste nuestro programa de referidos? */
+
+    .fotoPersonas {
+        width: 60%;
+    }
+
+}
+
+@media only screen and (min-width: 992px) {
+        
+    /* Sección 4: ¿ya aprovechaste nuestro programa de referidos? */
+
+    .contenedorReferidos {
+        width: 40%;
+    }
+
+    .fotoPersonas {
+        width: 35%;
+    }
+    
+}

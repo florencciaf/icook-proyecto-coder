@@ -1,0 +1,46 @@
+/* ---------------------------------------------- PLANES */
+
+.card {
+    box-shadow: $sombraGrisCaja;
+}
+
+.comentario {
+    background-color: #ffffff;
+    width: 100%;
+    margin: 1.5em 1em;
+    border-radius: 0.4rem;
+    padding: 2em 2em 2em 2em;
+    box-shadow: $sombraVerdeCaja;
+}
+
+.contenedorComentarios {
+    @include contenedores(column, center, center);
+}
+
+
+/* MEDIA QUERIES */ 
+
+@media only screen and (max-width: 600px) {
+
+}
+
+@media only screen and (min-width: 600px) {
+    
+}
+
+@media only screen and (min-width: 992px) {
+    
+    .comentario {
+        width: 20%;
+        margin: 3em 1em;
+    }
+
+    .contenedorComentarios {
+        @include contenedores(row, center, stretch);
+    }
+
+    .mx-0 {
+        margin: 3em !important;
+    }
+
+}

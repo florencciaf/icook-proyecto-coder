@@ -1,0 +1,243 @@
+@charset "UTF-8";
+/* ---------------------------------------------- VARIABLES */
+/* COLORES */
+/* SOMBRAS */
+/* ---------------------------------------------- ESTILOS GLOBALES */
+/* TIPOFRAFÍA */
+h1 {
+  color: #ffffff;
+  text-shadow: 0.05em 0.05em 0.05em #353535; }
+
+h2 {
+  color: #840015;
+  text-align: center; }
+
+h3, p {
+  color: #353535; }
+
+.footer {
+  font-size: 0.85rem; }
+
+.display-4 {
+  font-weight: 500; }
+
+/* LAYOUT */
+section, footer {
+  padding: 3em 1em; }
+
+.fondoVerde {
+  background-color: #d4f9da; }
+
+.fondoBlanco {
+  background-color: #ffffff; }
+
+.padreFlex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  height: 100%; }
+
+.contenedorTitulo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%; }
+
+/* NAV */
+.navbar-light {
+  background-color: #ffffff;
+  box-shadow: 0 0 0.5em #c7c7c7; }
+
+/* FOOTER */
+.navFooter {
+  overflow: hidden;
+  list-style-type: none;
+  padding: 0; }
+  .navFooter a {
+    font-size: 0.85rem;
+    text-decoration: none;
+    color: #353535; }
+  .navFooter a:hover {
+    font-weight: bold; }
+
+.grillaFooter {
+  display: grid;
+  grid-template-columns: 2fr 0.5fr 2fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "links vacio info" "links vacio apps"; }
+
+.footerAppsContenedor {
+  grid-area: info;
+  justify-self: start; }
+
+.footerFotosContenedor {
+  grid-area: apps;
+  justify-self: end; }
+
+.grillaFooter nav {
+  grid-area: links; }
+
+/* SOMBRAS Y BORDES */
+.sombraGris {
+  box-shadow: 0 0 0.5em #c7c7c7; }
+
+.sombraVerde {
+  box-shadow: 0 0 0.5em #94cc9d; }
+
+.bordeRedondeado {
+  border-radius: 2rem; }
+
+.bordeSuperior {
+  padding-top: 1em;
+  margin: 2em 0 0.5em 0;
+  border-top: 0.1rem solid #353535; }
+
+/* IMÁGENES */
+.fotoLogo, .fotoFooter {
+  height: 2rem; }
+
+.fotoFondo, .fotoFondoSobreNosotros {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6)), url("../images/fondo.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  flex-direction: column;
+  align-items: center; }
+
+/* BOTONES */
+.btn-primary {
+  background-color: #840015;
+  border-color: #840015; }
+
+.btn-primary:hover {
+  background-color: #680415;
+  border-color: #680415; }
+
+/* MEDIA QUERIES */
+@media only screen and (min-width: 600px) {
+  /* LAYOUT */
+  section, footer {
+    padding: 3em 2em; }
+  .padreFlex {
+    flex-direction: row;
+    justify-content: space-between; }
+  .subcontenedor {
+    width: 48%; }
+  .contenedorTexto {
+    width: 75%; }
+  /* FOOTER */
+  .grillaFooter {
+    grid-template-columns: 2fr 0.5fr 1fr 1fr;
+    grid-template-areas: "links vacio info apps" "links vacio info apps";
+    column-gap: 2%; } }
+
+@media only screen and (min-width: 992px) {
+  /* LAYOUT */
+  section, footer {
+    padding: 3em 3em; }
+  .contenedorTexto {
+    width: 50%; }
+  /* FOOTER */
+  .navFooter {
+    display: flex;
+    justify-content: space-between; } }
+
+/* ---------------------------------------------- INDEX */
+/* MEDIA QUERIES */
+@media only screen and (min-width: 600px) {
+  /* Sección 4: ¿ya aprovechaste nuestro programa de referidos? */
+  .fotoPersonas {
+    width: 60%; } }
+
+@media only screen and (min-width: 992px) {
+  /* Sección 4: ¿ya aprovechaste nuestro programa de referidos? */
+  .contenedorReferidos {
+    width: 40%; }
+  .fotoPersonas {
+    width: 35%; } }
+
+/* ---------------------------------------------- SOBRE NOSOTROS */
+.fotoFondoSobreNosotros {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6)), url("../images/fondo-sobre-nosotros.jpg"); }
+
+/* MEDIA QUERIES */
+/* ---------------------------------------------- PLANES */
+.card {
+  box-shadow: 0 0 0.5em #c7c7c7; }
+
+.comentario {
+  background-color: #ffffff;
+  width: 100%;
+  margin: 1.5em 1em;
+  border-radius: 0.4rem;
+  padding: 2em 2em 2em 2em;
+  box-shadow: 0 0 0.5em #94cc9d; }
+
+.contenedorComentarios {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%; }
+
+/* MEDIA QUERIES */
+@media only screen and (min-width: 992px) {
+  .comentario {
+    width: 20%;
+    margin: 3em 1em; }
+  .contenedorComentarios {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    height: 100%; }
+  .mx-0 {
+    margin: 3em !important; } }
+
+/* ---------------------------------------------- MENÚ */
+.fotosPlatos {
+  display: none; }
+
+.efecto:hover {
+  transform: scale(1.05, 1.05); }
+
+.carousel, .tituloCarrusel {
+  margin-top: 3em; }
+
+/* MEDIA QUERIES */
+@media only screen and (min-width: 600px) {
+  .fotosPlatos {
+    display: block; }
+  .carousel, .tituloCarrusel {
+    display: none; } }
+
+/* ---------------------------------------------- CONTACTO */
+.formulario {
+  margin: 2em auto; }
+
+.form-control:focus, .form-select:focus {
+  border: 0.2rem solid #840015;
+  box-shadow: none; }
+
+.form-check-input:checked {
+  background-color: #840015;
+  border-color: #840015; }
+
+.contenedorBotones {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 100%; }
+
+/* MEDIA QUERIES */
+@media only screen and (min-width: 600px) {
+  .formulario {
+    width: 70%; } }
+
+@media only screen and (min-width: 992px) {
+  .formulario {
+    width: 50%; } }
