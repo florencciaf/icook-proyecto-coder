@@ -5,13 +5,32 @@
 }
 
 .form-control:focus, .form-select:focus {
-    border: 0.2rem solid $violeta;
+    border: 0.1rem solid $violeta;
     box-shadow: none;
 }
 
 .form-check-input:checked {
     background-color: $violeta;
     border-color: $violeta;
+}
+
+.form-check-input:focus {
+    box-shadow: none;
+}
+
+.btn-primary {
+    background-color: $violeta;
+    border-color: $violeta;
+}
+
+.btn-primary:hover {
+    background-color: $violetaOscuro;
+    border-color: $violetaOscuro;
+}
+
+.btn-primary:focus {
+    background-color: $violetaOscuro;
+    border-color: $violetaOscuro;
 }
 
 .contenedorBotones {
